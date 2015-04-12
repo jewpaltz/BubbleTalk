@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style type="text/css">
+    #board {
+        position: relative;
+    }
+
+    #played-quotes {
+        position: absolute;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+        #played-quotes div {
+            background-image: url(/Content/images/bubble.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 120px;
+        }
+
+    #avaialble-quotes div {
+        background-image: url(/Content/images/bubble.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 120px;
+    }
+
+    #playing-card {
+        width: 100%;
+        min-height: 300px;
+        border: 2px solid #000000;
+        margin-top: 130px;
+    }
+</style>
+
+
+<div class="row" ng-app="app" ng-controller="main">
+    <div class="col-md-8" id="board">
+        <div id="played-quotes" class="row">
+            <div class="col-xs-3" ng-repeat="t in playedQoutes">
+                {{t}}
+            </div>
+        </div>
+        <img id="playing-card" />
+    </div>
+    <div class="col-md-4">
+        <div class="jumbotron" id="avaialble-quotes">
+            <div ng-repeat="t in availableQoutes">
+                {{t}}
+            </div>
+        </div>
+
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/angular")
+    <script type="text/javascript">
+        angular.module('app', [])
+        .controller('main', function ($scope) {
+            $scope.availableQoutes = ['one', 'two', 'three'];
+            $scope.playedQoutes = ['four', 'five', 'six'];
+        })
+    </script>
+}

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleTalk", "BubbleTalk\BubbleTalk.csproj", "{6B1E062F-74E9-4AD2-B778-A3635E60EE0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleTalk.Tests", "BubbleTalk.Tests\BubbleTalk.Tests.csproj", "{59C82DD0-20FC-4859-8727-636555653463}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B1E062F-74E9-4AD2-B778-A3635E60EE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B1E062F-74E9-4AD2-B778-A3635E60EE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B1E062F-74E9-4AD2-B778-A3635E60EE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B1E062F-74E9-4AD2-B778-A3635E60EE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C82DD0-20FC-4859-8727-636555653463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C82DD0-20FC-4859-8727-636555653463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C82DD0-20FC-4859-8727-636555653463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C82DD0-20FC-4859-8727-636555653463}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
